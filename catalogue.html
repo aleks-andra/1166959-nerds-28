@@ -1,266 +1,272 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
 </head>
 
 <body>
-  <div class="wrapper">
-    <header class="main-header__logo">
-      <a class="main-header__logo-link" href="index.html">
+  <header class="main-header">
+    <a class="main-header__logo" href="index.html">
       <img class="main-header__logo-image" src="https://via.placeholder.com/150x100" alt="Логотип Нёрдс">
-      </a>
-      <nav class="main-navigation">
-        <ul class="main-navigation__list-navigation">
-          <li class="main-navigation__item-navigation">
-            <a class="main-navigation__link-navigation" href="studio.html">Студия</a>
-          </li>
-          <li class="main-navigation__item-navigation">
-            <a class="main-navigation__link-navigation" href="clients.html">Клиенты</a>
-          </li>
-          <li class="main-navigation__item-navigation">
-            <a class="main-navigation__link-navigation" href="store.html">Магазин</a>
-          </li>
-          <li class="main-navigation__item-navigation">
-            <a class="main-navigation__link-navigation" href="contacts.html">Контакты</a>
-          </li>
-        </ul>
-        <ul class="main-navigation__user-navigation">
-         <li class="main-navigation__user-navigation">
-          <a class="main-navigation__user-navigation" href="cart.html">Корзина</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    </a>
+    <nav class="main-navigation">
+      <ul class="main-navigation__list-navigation">
+        <li class="main-navigation__item-navigation">
+          <a class="main-navigation__link-navigation" href="#">Студия</a>
+        </li>
+        <li class="main-navigation__item-navigation">
+          <a class="main-navigation__link-navigation" href="#">Клиенты</a>
+        </li>
+        <li class="main-navigation__item-navigation">
+          <a class="main-navigation__link-navigation">Магазин</a>
+        </li>
+        <li class="main-navigation__item-navigation">
+          <a class="main-navigation__link-navigation" href="#">Контакты</a>
+        </li>
+      </ul>
+      <ul class="main-navigation__user-navigation">
+        <li class="main-navigation__user-navigation">
+          <a class="main-navigation__user-navigation" href="#">Корзина</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-    <main class="main">
-      <h1 class="">Магазин готовых шаблонов</h1>
-      <!-- Раздел с формой поиска -->
-      <section class="site-search-inner">
-        <h2 class="visually-hidden">Форма поиска сайта</h2>
-        <form class="form-inner" action="http://echo.htmlacademy.ru" method="post">
-          <!-- Группа радио-баттонов-->
-          <fieldset class="form-inner__form-group">
-            <legend class="form-inner__form-title">
-              Сетка
-            </legend>
-            <ul class="form-inner__list" role="none presentation">
-              <li class="form-inner__item">
-                <input class="form-inner__input form-inner__input--radiobutton visually-hidden" type="radio" name="grid" value="adaptive" id="grid-adaptive" checked>
-                <label class="form-inner__label" for="grid-adaptive">Сетка</label>
-              </li>
-              <li class="form-inner__item">
-                <input class="form-inner__input form-inner__input--radiobutton visually-hidden" type="radio" name="grid" value="fixed" id="grid-fixed" checked disabled>
-                <label class="form-inner__label" for="grid-fixed">Фиксированная</label>
-              </li>
-              <li class="form-inner__item">
-                <input class="form-inner__input form-inner__input--radiobutton visually-hidden" type="radio" name="grid" value="fluid" id="grid-fluid" checked disabled>
-                <label class="form-inner__label" for="grid-fluid">Резиновая</label>
-              </li>
-            </ul>
-          </fieldset>
-          <!-- Группа чекбоксов -->
-          <fieldset class="form-inner__form-group">
-            <legend class="form-inner__form-title">
-              Особенности
-            </legend>
-            <ul class="form-inner__list" role="none presentation">
-              <li class="form-inner__item">
-                <input class="form-inner__input form-inner__input--checkbox visually-hidden" type="checkbox" name="features" value="slider" id="slider" checked>
-                <label class="form-inner__label" for="slider">Слайдер</label>
-              </li>
-              <li class="form-inner__item">
-                <input class="form-inner__input form-inner__input--checkbox visually-hidden" type="checkbox" name="features" value="advantages" id="advantages" checked disabled>
-                <label class="form-inner__label" for="advantages">Блок преимуществ</label>
-              </li>
-              <li class="form-inner__item">
-                <input class="form-inner__input form-inner__input--checkbox visually-hidden" type="checkbox" name="features" value="news" id="news" checked>
-                <label class="form-inner__label" for="news">Новости</label>
-              </li>
-              <li class="form-inner__item">
-                <input class="form-inner__input form-inner__input--checkbox visually-hidden" type="checkbox" name="features" value="gallery" id="gallery" checked disabled>
-                <label class="form-inner__label" for="gallery">Галерея</label>
-              </li>
-              <li class="form-inner__item">
-                <input class="form-inner__input form-inner__input--checkbox visually-hidden" type="checkbox" name="features" value="cart" id="cart" checked disabled>
-                <label class="form-inner__label" for="cart">Корзина</label>
-              </li>
-            </ul>
-            <button class="form-inner__button-show" type="submit">Показать</button>
-          </fieldset>
-
-          <!-- Выбор из диапазона -->
-          <fieldset class="form-inner__form-group">
-            <legend class="form-inner__form-title form-inner__form-title--price">
-              Стоимость:
-            </legend>
-            <div class="form-inner__range-filter">
-              <div class="form-inner__price-fields">
-                <label class="form-inner__label">От
-                  <input class="form-inner__input form-inner__input--text" type="text" name="price-min" value="0">
-                </label>
-                <label class="form-inner__label">До
-                  <input class="form-inner__input form-inner__input--text" type="text" name="price-max" value="15000">
-                </label>
+  <main class="main">
+    <h1 class="main__title">Магазин готовых шаблонов</h1>
+    <!-- Раздел с формой поиска -->
+    <section class="site-search">
+      <h2 class="visually-hidden">Форма поиска сайта</h2>
+      <form class="form" action="http://echo.htmlacademy.ru" method="post">
+        <!-- Выбор из диапазона -->
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">
+            Стоимость:
+          </legend>
+          <div class="form__range-filter">
+            <div class="form__price-fields">
+              <label class="form__label">От
+                <input class="form__input form__input--text" type="text" name="price-min" value="0">
+              </label>
+              <label class="form__label">До
+                <input class="form__input form__input--text" type="text" name="price-max" value="15000">
+              </label>
+            </div>
+            <div class="form__range">
+              <div class="form__range-bar">
+                <div class="form__range-bar form__range-bar--fill"></div>
               </div>
-              <div class="form-inner__range">
-                <div class="form-inner__range-bar">
-                  <div class="form-inner__range-bar form-inner__range-bar--fill"></div>
-                </div>
-                <button class="form-inner__range-grip form-inner__range-grip--min" type="button"><span class="visually-hidden">Минимальное значение цены</span></button>
-                <button class="form-inner__range-grip form-inner__range-grip--max" type="button"><span class="visually-hidden">Максимальное значение цены</span></button>
-              </div>
-            </div>
-          </fieldset>
-        </form>
-      </section>
-
-      <!-- Раздел сортировки результатов поиска-->
-      <section class="sorting">
-        <h2 class="visually-hidden">Сортировка</h2>
-        <p class="sorting__text">Сортировать</p>
-        <ul class="sorting__list">
-          <li class="sorting__item">
-            <a class="sorting__link sorting__link--current" href="#">По цене</a>
-          </li>
-          <li class="sorting__item">
-            <a class="sorting__link" href="#">По типу</a>
-          </li>
-          <li class="sorting__item">
-            <a class="sorting__link" href="#">По названию</a>
-          </li>
-        </ul>
-        <ul class="sorting__direction-list">
-          <li class="sorting__direction-item">
-            <a class="sorting__direction-link sorting__direction-link--up" href="#"><span class="visually-hidden">По возрастанию</span></a>
-          </li>
-          <li class="sorting__direction-item">
-            <a class="sorting__direction-link sorting__direction-link--down sorting__direction-link--current" href="#"><span class="visually-hidden">По убыванию</span></a>
-          </li>
-        </ul>
-      </section>
-
-      <div class="products">
-        <!--сайты-->
-        <div class="product-wrapper">
-
-          <!--карточка сайта Седона-->
-          <div class="product-wrapper__picture">
-            <img class="products__image" src="https://via.placeholder.com/150x100" alt="Седона">
-          </div>
-          <!--инфо о сайте Седона-->
-          <div class="product-wrapper__website">
-            <a class="product-wrapper__title">Седона</a>
-            <div class="product-wrapper__details">
-              <span class="product-wrapper_type product-wrapper_type-sedona">Информационный сайт для туристов</span>
-            </div>
-            <!--кнопка с ценой-->
-            <div class="product-wrapper__buttons">
-              <a href="" class="product-wrapper__button product-wrapper__button--sedona">9 900 ₽</a>
+              <button class="form__range-grip form__range-grip--min" type="button"><span class="visually-hidden">Минимальное значение цены</span></button>
+              <button class="form__range-grip form__range-grip--max" type="button"><span class="visually-hidden">Максимальное значение цены</span></button>
             </div>
           </div>
-
-          <!--карточка сайта Пинк-->
-          <div class="product-wrapper__picture">
-            <img class="products__image" src="https://via.placeholder.com/150x100" alt="Пинк">
-          </div>
-          <!--инфо о сайте Пинк-->
-          <div class="product-wrapper__website">
-            <a class="product-wrapper__title">Pink APP</a>
-            <div class="product-wrapper__details">
-              <span class="product-wrapper_type product-wrapper_type-sedona">Продуктовый лендинг приложения для iOS и Android</span>
-            </div>
-          <!--кнопка с ценой-->
-            <div class="product-wrapper__buttons">
-              <a href="" class="product-wrapper__button product-wrapper__button--pink">9 900 ₽</a>
-            </div>
-          </div>
-
-          <!--карточка сайта Барбершоп-->
-          <div class="product-wrapper__picture">
-            <img class="products__image" src="https://via.placeholder.com/150x100" alt="Барбершоп">
-          </div>
-          <!--инфо о сайте Барбершоп-->
-          <div class="product-wrapper__website">
-            <a class="product-wrapper__title">Барбершоп</a>
-            <div class="product-wrapper__details">
-              <span class="product-wrapper_type product-wrapper_type-sedona">Сайт</span>
-            </div>
-          <!--кнопка с ценой-->
-            <div class="product-wrapper__buttons">
-              <a href="" class="product-wrapper__button product-wrapper__button--barbershop">9 900 ₽</a>
-            </div>
-          </div>
-
-          <!--карточка сайта Мишка-->
-          <div class="product-wrapper__picture">
-            <img class="products__image" src="https://via.placeholder.com/150x100" alt="Мишка">
-          </div>
-          <!--инфо о сайте Мишка-->
-          <div class="product-wrapper__website">
-            <a class="product-wrapper__title">Мишка</a>
-            <div class="product-wrapper__details">
-              <span class="product-wrapper_type product-wrapper_type-sedona">Сайт</span>
-            </div>
-          <!--кнопка с ценой-->
-            <div class="product-wrapper__buttons">
-              <a href="" class="product-wrapper__button product-wrapper__button--mishka">9 900 ₽</a>
-            </div>
-          </div>
-
-          <!--карточка сайта Автошкола-->
-          <div class="product-wrapper__picture">
-            <img class="products__image" src="https://via.placeholder.com/150x100" alt="Автошкола">
-          </div>
-          <!--инфо о сайте Автошкола-->
-          <div class="product-wrapper__website">
-            <a class="product-wrapper__title">Барбершоп</a>
-            <div class="product-wrapper__details">
-              <span class="product-wrapper_type product-wrapper_type-sedona">Сайт</span>
-            </div>
-          <!--кнопка с ценой-->
-            <div class="product-wrapper__buttons">
-              <a href="" class="product-wrapper__button product-wrapper__button--school">9 900 ₽</a>
-            </div>
-          </div>
-
-          <!--карточка сайта Кваст-->
-          <div class="product-wrapper__picture">
-            <img class="products__image" src="https://via.placeholder.com/150x100" alt="Кваст">
-          </div>
-          <!--инфо о сайте Кваст-->
-          <div class="product-wrapper__website">
-            <a class="product-wrapper__title">Кваст</a>
-            <div class="product-wrapper__details">
-              <span class="product-wrapper_type product-wrapper_type-sedona">Сайт</span>
-            </div>
-          <!--кнопка с ценой-->
-            <div class="product-wrapper__buttons">
-              <a href="" class="product-wrapper__button product-wrapper__button--kvast">9 900 ₽</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </main>
-
-    <footer class="main-footer">
-      <div class="main-footer">
-        <div class="main-footer__text">
-        <h2 class="main-footer__text">Давайте дружить, это выгодно!</h2>
-        <p class="main-footer__text">Скидка 10% для друзей из социальных сетей</p>
-        </div>
-
-        <div class="main-footer__social">
-          <ul class="main-footer__social-list">
-            <li class="main-footer__item"><a class="main-footer__link main-footer__link--icon-vkontakte" href="https://vk.com"><span class="visually-hidden">Наша группа в Вконтакте</span></a></li>
-            <li class="main-footer__item"><a class="main-footer__link main-footer__link--icon-facebook" href="https://facebook.com"><span class="visually-hidden">Наша группа в Фейсбуке</span></a></li>
-            <li class="main-footer__item"><a class="main-footer__link main-footer__link--icon-instagram" href="https://www.instgram.com"><span class="visually-hidden">Наш группа в Инстаграм</span></a></li>
+        </fieldset>
+        <!-- Группа радио-баттонов-->
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">
+            Сетка
+          </legend>
+          <ul class="form__list" role="none presentation">
+            <li class="form__item">
+              <input class="form__input form__input--radiobutton visually-hidden" type="radio" name="grid" value="adaptive" id="grid-adaptive" checked>
+              <label class="form__label" for="grid-adaptive">Адаптивная</label>
+            </li>
+            <li class="form__item">
+              <input class="form__input form__input--radiobutton visually-hidden" type="radio" name="grid" value="fixed" id="grid-fixed" disabled>
+              <label class="form__label" for="grid-fixed">Фиксированная</label>
+            </li>
+            <li class="form__item">
+              <input class="form__input form__input--radiobutton visually-hidden" type="radio" name="grid" value="fluid" id="grid-fluid" disabled>
+              <label class="form__label" for="grid-fluid">Резиновая</label>
+            </li>
           </ul>
+        </fieldset>
+        <!-- Группа чекбоксов -->
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">
+            Особенности
+          </legend>
+          <ul class="form__list" role="none presentation">
+            <li class="form__item">
+              <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="features" value="slider" id="slider" checked>
+              <label class="form__label" for="slider">Слайдер</label>
+            </li>
+            <li class="form__item">
+              <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="features" value="advantages" id="advantages" checked disabled>
+              <label class="form__label" for="advantages">Блок преимуществ</label>
+            </li>
+            <li class="form__item">
+              <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="features" value="news" id="news" checked>
+              <label class="form__label" for="news">Новости</label>
+            </li>
+            <li class="form__item">
+              <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="features" value="gallery" id="gallery" checked disabled>
+              <label class="form__label" for="gallery">Галерея</label>
+            </li>
+            <li class="form__item">
+              <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="features" value="cart" id="cart" checked disabled>
+              <label class="form__label" for="cart">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="form__button" type="submit">Показать</button>
+      </form>
+    </section>
+
+    <!-- Раздел сортировки результатов поиска-->
+    <section class="sorting">
+      <h2 class="visually-hidden">Сортировка</h2>
+      <p class="sorting__text">Сортировать</p>
+      <ul class="sorting__list">
+        <li class="sorting__item">
+          <a class="sorting__link sorting__link--current" href="#">По цене</a>
+        </li>
+        <li class="sorting__item">
+          <a class="sorting__link" href="#">По типу</a>
+        </li>
+        <li class="sorting__item">
+          <a class="sorting__link" href="#">По названию</a>
+        </li>
+      </ul>
+      <ul class="sorting__direction-list">
+        <li class="sorting__direction-item">
+          <a class="sorting__direction-link sorting__direction-link--up" href="#"><span class="visually-hidden">По возрастанию</span></a>
+        </li>
+        <li class="sorting__direction-item">
+          <a class="sorting__direction-link sorting__direction-link--down sorting__direction-link--current" href="#"><span class="visually-hidden">По убыванию</span></a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="catalog">
+      <!--сайты-->
+      <div class="catalog-website">
+        <ul class="catalog-website__list">
+          <!--карточка сайта Седона-->
+          <li class="catalog-website__item">
+            <div class="catalog-website__image">
+              <img class="catalog-website__image catalog-website__image--sedona" src="img/sedona.jpg" width="360" height="580" alt="Сайт Седона">
+            </div>
+            <div class="catalog-website__info">
+              <p class="catalog-website__title">Sedona</p>
+              <p class="catalog-website__desciption">Информационный сайт для туристов</p>
+            </div>
+            <div class="catalog-website__buttons">
+              <a href="sedona.html" class="catalog-website__buttons catalog-website__buttons--sedona">9 900 ₽</a>
+            </div>
+          </li>
+          <!--карточка сайта Пинк-->
+          <li class="catalog-website__item">
+            <!--карточка сайта Седона-->
+            <div class="catalog-website__image">
+              <img class="catalog-website__image catalog-website__image--pink" src="img/pink.jpg" width="378" height="578" alt="Сайт Пинк">
+            </div>
+            <div class="catalog-website__info">
+              <p class="catalog-website__title">Pink APP</p>
+              <p class="catalog-website__desciption">Продуктовый лендинг приложения для iOS и Android</p>
+            </div>
+            <div class="catalog-website__buttons">
+              <a href="pink.html" class="catalog-website__buttons catalog-website__buttons--pink">9 900 ₽</a>
+            </div>
+          </li>
+          <!--карточка сайта Барбершоп-->
+          <li class="catalog-website__item">
+            <div class="catalog-website__image">
+              <img class="catalog-website__image catalog-website__image--barbershop" src="img/barbershop.jpg" width="358" height="578" alt="Сайт Барбершоп">
+            </div>
+            <div class="catalog-website__info">
+              <p class="catalog-website__title">Barbershop</p>
+              <p class="catalog-website__desciption">Сайт салона красоты.  Для мужчин, да.</p>
+            </div>
+            <div class="catalog-website__buttons">
+              <a href="barbershop.html" class="catalog-website__buttons catalog-website__buttons--barbershop">9 900 ₽</a>
+            </div>
+          </li>
+          <!--карточка сайта Мишка-->
+          <li class="catalog-website__item">
+            <div class="catalog-website__image">
+              <img class="catalog-website__image catalog-website__image--mishka" src="img/mishka.jpg" width="378" height="578" alt="Сайт Мишка">
+            </div>
+            <div class="catalog-website__info">
+              <p class="catalog-website__title">Mishka</p>
+              <p class="catalog-website__desciption">Интернет-магазин  вязаных игрушек</p>
+            </div>
+            <div class="catalog-website__buttons">
+              <a href="mishka.html" class="catalog-website__buttons catalog-website__buttons--mishka">9 900 ₽</a>
+            </div>
+          </li>
+          <!--карточка сайта Автошкола-->
+          <li class="catalog-website__item">
+            <div class="catalog-website__image">
+              <img class="catalog-website__image catalog-website__image--aplus" src="img/aplus.jpg" width="378" height="578" alt="Сайт A Plus">
+            </div>
+            <div class="catalog-website__info">
+              <p class="catalog-website__title">A Plus</p>
+              <p class="catalog-website__desciption">Лендинг курсов повышения квалификации</p>
+            </div>
+            <div class="catalog-website__buttons">
+              <a href="aplus.html" class="catalog-website__buttons catalog-website__buttons--aplus">9 900 ₽</a>
+            </div>
+          </li>
+          <!--карточка сайта Кваст-->
+          <li class="catalog-website__item">
+            <div class="catalog-website__image">
+              <img class="catalog-website__image catalog-website__image--kvast" src="img/kvast.jpg" width="378" height="578" alt="Сайт Кваст">
+            </div>
+            <div class="catalog-website__info">
+              <p class="catalog-website__title">Кваст</p>
+              <p class="catalog-website__desciption">Промо-сайт производителя  крафтового кваса</p>
+            </div>
+            <div class="catalog-website__buttons">
+              <a href="kvast.html" class="catalog-website__buttons catalog-website__buttons--kvast">9 900 ₽</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <ul class="pagination-list">
+        <li>
+          <a class="pagination-item active>">1</a>
+        </li>
+        <li>
+          <a class="pagination-item active>">2</a>
+        </li>
+        <li>
+          <a class="pagination-item active>">3</a>
+        </li>
+        <li>
+          <a class="pagination-item active>">Следующая</a>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <img class="main-footer__map" src="img/map.png" width="1440" height="416" alt="Карта Нёрдс">
+      <div class="main-footer__contacts">
+        <p class="main-footer__contacts-title">NЁRDS DESIGN STUDIO</p>
+        <p class="main-footer__contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p class="main-footer__contacts-phone">тел. +7 (812) 275-75-75</p>  
+        <div class="main-footer__contacts-button button">
+          <a href="#" class="main-footer__contacts-link">Напишите нам</a>
         </div>
       </div>
-    </footer>
-   </div>
+      <div class="main-footer__text">
+        <p class="main-footer__title">Давайте дружить, это выгодно!</p>
+        <p class="main-footer__text">Скидка 10% для друзей из социальных сетей</p>
+      </div>
+
+      <div class="main-footer__social">
+        <ul class="main-footer__social-list">
+          <li class="main-footer__item"><a class="main-footer__link main-footer__link--icon-vkontakte" href="https://vk.com"><span class="visually-hidden">Наша группа в Вконтакте</span></a></li>
+          <li class="main-footer__item"><a class="main-footer__link main-footer__link--icon-facebook" href="https://facebook.com"><span class="visually-hidden">Наша группа в Фейсбуке</span></a></li>
+          <li class="main-footer__item"><a class="main-footer__link main-footer__link--icon-instagram" href="https://www.instgram.com"><span class="visually-hidden">Наш группа в Инстаграм</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>

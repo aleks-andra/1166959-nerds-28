@@ -1,114 +1,164 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
 </head>
 
 <body>
-  <div class="wrapper">
-    <header class="main-header__logo">
-      <a class="main-header__logo-link">
-      <img class="main-header__logo-image" src="https://via.placeholder.com/150x100" alt="Логотип Нёрдс">
-      </a>
-      <nav class="main-navigation">
-        <ul class="main-navigation__list-navigation">
-          <li class="main-navigation__item-navigation">
-            <a class="main-navigation__link-navigation" href="studio.html">Студия</a>
-          </li>
-          <li class="main-navigation__item-navigation">
-            <a class="main-navigation__link-navigation" href="clients.html">Клиенты</a>
-          </li>
-          <li class="main-navigation__item-navigation">
-            <a class="main-navigation__link-navigation" href="inner.html">Магазин</a>
-          </li>
-          <li class="main-navigation__item-navigation">
-            <a class="main-navigation__link-navigation" href="contacts.html">Контакты</a>
-          </li>
-        </ul>
-        <ul class="main-navigation__user-navigation">
-         <li class="main-navigation__user-navigation">
-          <a class="main-navigation__user-navigation" href="cart.html">Корзина</a>
-          </li>
-        </ul>
-      </nav>
-</header>
-<main class="main">
-  <section class="features">
-    <header class="features__header">
-      <p class="features__title">Долго, дорого, скрупулезно.</p>
-      <p class="features__text">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-
-      <!--кнопка под блоком со слайдером-->
-      <div class="features__buttons">
-        <a href="#" class="features__button__button features__button__header-button">Узнать больше</a>
-      </div>
-
-    </header>
-    <div class="features__wrapper">
-      <div class="features__list">
-        <div class="features__feature-item">
-          <h3 class="feature-item__title">Веб-сайты</h3>
-          <p class="feature-item__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-        </div>
-
-        <!--кнопка под блоком Веб-сайты-->
-        <div class="features__buttons">
-          <a href="#" class="features__button__button features__button__button--red">Заказать</a>
-        </div>
-
-        <div class="features__feature-item">
-          <h3 class="feature-item__title">Приложения</h3>
-          <p class="feature-item__text">Покорите топ-10 приложений в AppStore и Google Play</p>
-        </div>
-
-        <!--кнопка под блоком Приложения-->
-        <div class="features__buttons">
-          <a href="#" class="features__button__button features__button__button--green">Заказать</a>
-        </div>
-
-        <div class="features__feature-item">
-          <h3 class="feature-item__title">Презентации</h3>
-          <p class="feature-item__text">Вы даже не подозреваете, насколько вы изумительны!</p>
-        </div>
-
-        <!--кнопка под блоком Презентации-->
-        <div class="features__buttons">
-          <a href="#" class="features__button__button features__button__button--yellow">Заказать</a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="about">
-    <h2 class="visually-hidden">О нас</h2>
-    …
-  </section>
-  <section class="companies">
-    <h2 class="visually-hidden">Производители</h2>
-    …
-  </section>
-
-</main>
-
-<footer class="main-footer">
-  <div class="main-footer">
-    <div class="main-footer__text">
-    <p class="main-footer__title">Давайте дружить, это выгодно!</p>
-    <p class="main-footer__text">Скидка 10% для друзей из социальных сетей</p>
-    </div>
-
-    <div class="main-footer__social">
-      <ul class="main-footer__social-list">
-        <li class="main-footer__item"><a class="main-footer__link main-footer__link--icon-vkontakte" href="https://vk.com"><span class="visually-hidden">Наша группа в Вконтакте</span></a></li>
-        <li class="main-footer__item"><a class="main-footer__link main-footer__link--icon-facebook" href="https://facebook.com"><span class="visually-hidden">Наша группа в Фейсбуке</span></a></li>
-        <li class="main-footer__item"><a class="main-footer__link main-footer__link--icon-instagram" href="https://www.instgram.com"><span class="visually-hidden">Наш группа в Инстаграм</span></a></li>
+  <header class="main-header">
+    <a class="main-header__logo">
+      <img class="main-header__logo-image" src="img/nerds_logo.png" width="160" height="65" alt="Логотип Нёрдс">
+    </a>
+    <nav class="main-navigation">
+      <ul class="main-navigation__list-navigation">
+        <li class="main-navigation__item-navigation">
+          <a class="main-navigation__link-navigation" href="#">Студия</a>
+        </li>
+        <li class="main-navigation__item-navigation">
+          <a class="main-navigation__link-navigation" href="#">Клиенты</a>
+        </li>
+        <li class="main-navigation__item-navigation">
+          <a class="main-navigation__link-navigation" href="catalogue.html">Магазин</a>
+        </li>
+        <li class="main-navigation__item-navigation">
+          <a class="main-navigation__link-navigation" href="#">Контакты</a>
+        </li>
       </ul>
-    </div>
-  </div>
+      <ul class="main-navigation__user-navigation">
+        <li class="main-navigation__user-navigation">
+          <a class="main-navigation__user-navigation" href="#">Корзина</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="features">
+      <div class="features__header">
+        <p class="features__title">Долго, дорого, скрупулезно.</p>
+        <p class="features__text">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>>
+        <div class="features__buttons">
+          <a href="#" class="features__button__button features__button__header-button">Узнать больше</a>
+        </div>
+        <div>
+          <img class="features__image" src="img/nerds_slider.jpg" width="760" height="431" alt="Картинка с телефонами">
+        </div>
+      </div>
+      <div class="features__wrapper">
+        <ul class="features__list">
+          <li class="features__item">
+            <img class="features__item-image" src="img/website.svg" width="300" height="146" alt="Картинка с ноутбуком">
+            <h3 class="features__item-title">Веб-сайты</h3>
+            <p class="features__item-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <div class="features__item-button button">
+              <a href="#" class="features__item-link features__item-link--red">Заказать</a>
+            </div>
+          </li>
+          <li class="features__item">
+            <img class="features__item-image" src="img/apps.svg" width="300" height="146" alt="Картинка с телефоном">
+            <h3 class="features__item-title">Приложения</h3>
+            <p class="features__item-text">Покорите топ-10 приложений в AppStore и Google Play</p>
+            <div class="features__item-button button">
+              <a href="#" class="features__item-link features__item-link--green">Заказать</a>
+            </div>
+          </li>
+          <li class="features__item">
+            <img class="features__item-image" src="img/presentations.svg" width="300" height="146" alt="Картинка с презентацией">
+            <h3 class="features__item-title">Презентации</h3>
+            <p class="features__item-text">Вы даже не подозреваете, насколько вы изумительны!</p>
+            <div class="features__button button">
+              <a href="#" class="features__button__button features__button__button--yellow">Заказать</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-</footer>
-   </div>
+    <section class="about">
+      <h2 class="visually-hidden">О нас</h2>
+      <div class="about__description">
+        <p class="about__description-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+        <p class="about__description-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет  превыше креатива. Работаем не покладая рук, как роботы.</p>
+      </div>
+      <div class="about__services">
+        <p class="about__services-title">Выполняем заказы на разработку:</p>
+        <ul class="about__services-list">
+          <li class="about__services-item">Веб-сайтов любой сложности</li>
+          <li class="about__services-item">Мобильных приложений для iOS и Android</li>
+          <li class="about__services-item">Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
+      </div>
+      <div class="about__advantages">
+        <img class="about__advantages-image" src="img/nerds_image.png" width="360" height="208" alt="Нёрдс">
+        <p class="about__advantages-text">с 2004 года Любим точность во всем:</p>
+        <table class="about__advantages-table">
+          <tr class="about__advantages-row">
+            <td class="about__advantages-cell about__advantages-cell--figures">146%</td>
+            <td class="about__advantages-cell about__advantages-cell--figures">100%</td>
+            <td class="about__advantages-cell about__advantages-cell--figures">50%</td>
+          </tr>
+          <tr class="about__advantages-row">
+            <td class="about__advantages-cell">Уровень  самоотдачи</td>
+            <td class="about__advantages-cell">Соблюдение  сроков</td>
+            <td class="about__advantages-cell">Минимальная  предоплата</td>
+          </tr>
+        </table>
+      </div>
+
+    </section>
+    <section class="companies">
+      <h2 class="visually-hidden">Производители</h2>
+      <ul class="companies__list">
+        <li class="companies__item">
+          <a class="companies__link">
+            <span class="visually-hidden">html academy</span>
+          </a>
+        </li>
+        <li class="companies__item">
+          <a class="companies__link">
+            <span class="visually-hidden">barbershop borodinsky</span>
+          </a>
+        </li>
+        <li class="companies__item">
+          <a class="companies__link">
+            <span class="visually-hidden">pink</span>
+          </a>
+        </li>
+        <li class="companies__item">
+          <a class="companies__link">
+            <span class="visually-hidden">mishka</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <img class="main-footer__map" src="img/map.png" width="1440" height="416" alt="Карта Нёрдс">
+      <div class="main-footer__contacts">
+        <p class="main-footer__contacts-title">NЁRDS DESIGN STUDIO</p>
+        <p class="main-footer__contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p class="main-footer__contacts-phone">тел. +7 (812) 275-75-75</p>  
+        <div class="main-footer__contacts-button button">
+          <a href="#" class="main-footer__contacts-link">Напишите нам</a>
+        </div>
+      </div>
+      <div class="main-footer__text">
+        <p class="main-footer__title">Давайте дружить, это выгодно!</p>
+        <p class="main-footer__text">Скидка 10% для друзей из социальных сетей</p>
+      </div>
+
+      <div class="main-footer__social">
+        <ul class="main-footer__social-list">
+          <li class="main-footer__item"><a class="main-footer__link main-footer__link--icon-vkontakte" href="https://vk.com"><span class="visually-hidden">Наша группа в Вконтакте</span></a></li>
+          <li class="main-footer__item"><a class="main-footer__link main-footer__link--icon-facebook" href="https://facebook.com"><span class="visually-hidden">Наша группа в Фейсбуке</span></a></li>
+          <li class="main-footer__item"><a class="main-footer__link main-footer__link--icon-instagram" href="https://www.instgram.com"><span class="visually-hidden">Наш группа в Инстаграм</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
