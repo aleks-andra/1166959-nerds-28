@@ -246,6 +246,7 @@
         </section>
 
         <section class="catalog">
+          <h2 class="visually-hidden">Каталог с карточками сайтов</h2>
           <!--сайты-->
           <ul class="catalog__list">
             <!--карточка сайта Седона-->
@@ -420,14 +421,14 @@
           src="img/map.png"
           width="1440"
           height="416"
-          alt="Карта Нёрдс"
+          alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"
         />
         <div class="main-footer__contacts">
           <p class="main-footer__contacts-title">NЁRDS DESIGN STUDIO</p>
           <p class="main-footer__contacts-address">
             191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </p>
-          <p class="main-footer__contacts-phone">тел. +7 (812) 275-75-75</p>
+          <a class="main-footer__contacts-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
           <div class="main-footer__contacts-button button">
             <a href="#" class="main-footer__contacts-link">Напишите нам</a>
           </div>
@@ -467,6 +468,7 @@
       </div>
     </footer>
     <section class="modal">
+      <h2 class="visually-hidden">Форма для связи</h2>
       <form class="form" method="post" action="https://echo.htmlacademy.ru">
         <p class="form__title">Напишите нам</p>
         <div class="form__name">
@@ -474,6 +476,7 @@
           <input
             class="form__field"
             type="text"
+            name="fullname"
             id="name"
             placeholder="Имя Фамилия"
           />
@@ -482,7 +485,8 @@
           <label class="form__label" for="email">Ваш e-mail:</label>
           <input
             class="form__field"
-            type="email"
+            type="text"
+            name="email"
             id="email"
             placeholder="email@example.com"
           />
@@ -491,6 +495,7 @@
           <label class="form__label" for="letter">Текст письма:</label>
           <textarea
             class="form__field"
+            name="text"
             id="letter"
             placeholder="В свободной форме"
           ></textarea>
